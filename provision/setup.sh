@@ -77,7 +77,6 @@ fi
 echo "Configuring Nginx..."
 rm -rf /etc/nginx/sites-available/default
 cp /var/www/provision/nginx/default /etc/nginx/sites-available/default > /dev/null
-ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 
 
 # Restarting Nginx for config to take effect
