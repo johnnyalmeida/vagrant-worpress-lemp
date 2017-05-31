@@ -50,8 +50,8 @@ debconf-set-selections <<< "mysql-server mysql-server/root_password_again passwo
 echo "Installing MySQL..."
 sudo apt-get install -y mysql-server > /dev/null
 
-# PHPmyadmin
-echo "Preparing phpmyadmin"
+# phpMyAdmin
+echo "Preparing phpMyAdmin"
 debconf-set-selections <<< "phpmyadmin phpmyadmin/dbconfig-install boolean true"
 debconf-set-selections <<< "phpmyadmin phpmyadmin/app-password-confirm password $DBPASSWD"
 debconf-set-selections <<< "phpmyadmin phpmyadmin/mysql/admin-pass password $DBPASSWD"
