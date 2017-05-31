@@ -1,6 +1,6 @@
 # Vagrant Wordpress LEMP
 
-Simple Wordpress LEMP stack.
+Simple Wordpress LEMP stack with phpMyAdmin.
 
 ### Installation
 
@@ -12,7 +12,8 @@ $ vagrant up
 
 ### Use
 
-* The VM will be listening the IP `192.168.33.11`
-* You can customize database settings in the `provision/setup.sh` file.
-* You can customize Nginx server name in the `provision/nginx/default` file.
-* You can place a database dump in the `database` directory and it will be imported in the VM provisioning.
+* The VM will be listening the IP `192.168.33.11`;
+* Place your wordpress code in the `web` folder;
+* You can customize database settings in the `provision/setup.sh` file;
+* You can customize Nginx server name in the `provision/nginx/default` file;
+* You can place a database dump in the `database` directory and it will be imported in the VM provisioning;
