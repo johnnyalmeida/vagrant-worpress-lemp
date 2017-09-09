@@ -68,7 +68,7 @@ mysql -uroot -proot -e "CREATE DATABASE IF NOT EXISTS $DBNAME;" > /dev/null
 # Import Mysql Dump
 if [ -f /var/www/database/$DBDUMP ]; then
   echo "Importing database..."
-  mysql -uroot -proot wordpress < /var/www/database/$DBDUMP > /dev/nulls
+  mysql -uroot -proot $DBNAME < /var/www/database/$DBDUMP > /dev/nulls
 else
   echo "No database dump to import."
 fi
